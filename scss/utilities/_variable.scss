@@ -1,0 +1,68 @@
+$white: #fff;
+$yellow: #FFD366;
+$yellow-600: #FFC432;
+$yellow-700: #DEA821;
+$blue: #31BAF9;
+$green: #86D73F;
+$red: #FF1200;
+$orange: #FF982D;
+$orange600: #FF6C03;
+$gray: gray;
+$gray-600: #4A4A4A;
+$gray-700: #424242;
+
+
+$theme-colors: (
+    'white': #fff,
+    'yellow': #FFD366,
+    'blue': #31BAF9,
+    'green': #86D73F,
+    'red': #FF1200,
+    'orange': #FF982D,
+    'orange600': #FF6C03,
+    'gray': gray,    
+    'gray600': #4A4A4A,
+    'gray700': #424242,
+);
+
+$border: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  3: 3px,
+  4: 4px,
+  5: 5px,
+  6: 6px,
+  7: 7px,
+);
+
+$spacer: 8px;
+$spacers: (
+    0: 0,
+    1: $spacer,
+    2: $spacer * 2,
+    3: $spacer * 3,
+    4: $spacer * 4,
+    5: $spacer * 5,
+    6: $spacer * 6,
+    7: $spacer * 7,
+    8: $spacer * 8,
+    12: $spacer * 12,
+    auto: auto,
+);
+
+$displays: (
+  "inline": inline,
+  "block": block,
+  "flex": flex,
+  "none": none,
+);
+
+$text-size: (
+    'xs': 12px,
+    'sm': 14px,
+    'md': 18px,
+    'lg': 20px,
+    'xl': 24px,
+    'xxl': 32px,
+)

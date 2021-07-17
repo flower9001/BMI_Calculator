@@ -1,0 +1,43 @@
+body, div,
+h1, h2, h3, h4, h5, h6, p,
+a, img, footer {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	
+}
+
+body {
+	line-height: 1;
+	background: darken(#fff, 5%);
+}
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: #424242;
+}
+
+/* hide number arrow */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+/* modified placeholder color*/
+::placeholder {
+    /* CSS 3 標準 */
+    color: rgba(255, 255, 255, 0.50);
+}
+
+input:focus-visible {
+    outline: none;
+}

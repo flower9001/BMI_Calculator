@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI 量測</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="shortcut icon" href="./images/BMICLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <img src="./images/BMICLogo.png" alt="logo" class="mr-12">
+        <div class="bmi">
+            <p>身高 cm</p>
+            <input type="number" class="height" placeholder="請輸入身高">
+            <p>體重 kg</p>
+            <input type="number" class="weight" placeholder="請輸入體重">
+        </div>
+        <div class="result">
+            <a href="#" class="compute d-flex" data-state="">看結果</a>
+            <p class="bmiValue d-flex d-none"></p>
+            <a href="#" class="iconLoop d-flex d-none"><img src="./images/icons_loop.png" alt="iconLoop"></a>
+            <p class="resultFont"></p>
+        </div>    
+    </div>
+    <div class="data">
+        <h2>BMI 紀錄</h2>
+        <ul class="list">            
+        </ul>
+        <p>無資料</p>
+        <a href="#" class="delAll">刪除所有資料</a>
+    </div>
+    <footer class="footer"><img src="./images/BMICLogo_footer.png" alt="logoFooter"></footer>
+    <script src="js/all.js"></script>
+</body>
+
+</html>
