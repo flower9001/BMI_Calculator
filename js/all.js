@@ -69,28 +69,23 @@ function computeBMI(e) {
     if (bmi < 18.5) {
         obj.result = '過輕';
         obj.color = 'blue';
-        data.push(obj);
     } else if (bmi >= 18.5 && bmi < 24) {
         obj.result = '理想';
         obj.color = 'green';
-        data.push(obj);
     } else if (bmi >= 24 && bmi < 27) {
         obj.result = '過重';
         obj.color = 'orange';
-        data.push(obj);
     } else if (bmi >= 27 && bmi < 30) {
         obj.result = '輕度肥胖';
         obj.color = 'orange600';
-        data.push(obj);
     } else if (bmi >= 30 && bmi < 35) {
         obj.result = '中度肥胖';
         obj.color = 'orange600';
-        data.push(obj);
     } else if (bmi >= 35) {
         obj.result = '重度肥胖';
         obj.color = 'red';
-        data.push(obj);
     }
+    data.push(obj);
     resultFont.textContent = obj.result;
     resultFont.setAttribute('class', `resultFont text-${obj.color}`)
     localStorage.setItem('BMIData', JSON.stringify(data));
@@ -112,8 +107,8 @@ iconLoop.addEventListener('click', function(e){
     if (compute.getAttribute('data-state') == 'none') {
         compute.setAttribute('data-state', '');
         compute.classList.remove('d-none');
-        bmiValue.classList.add('d-none');
-        iconLoop.classList.add('d-none');
+        bmiValue.setAttribute('class', 'bmiValue d-flex d-none');
+        iconLoop.setAttribute('class', 'iconLoop d-flex d-none');
         resultFont.textContent = '';
     }
     document.querySelector('.height').value = '';
