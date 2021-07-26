@@ -30,6 +30,9 @@
             color: $white;
             background: rgba(255, 255, 255, 0.18);
         }
+        .weight {
+            margin-bottom: 4px;
+        }
     }
     .result {
         position: relative;
@@ -305,4 +308,9 @@ $value in $displays {
     .fz-#{$szie} {
         font-size: $value;
     }
+}
+
+.hint {
+    visibility: hidden;
+    padding: 0;
 }

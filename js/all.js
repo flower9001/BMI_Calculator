@@ -37,9 +37,10 @@ function computeBMI(e) {
     // BMI compute
     let h = document.querySelector('.height').value;
     let w = document.querySelector('.weight').value;
-    let result = document.querySelector('.result');
+    let hint = document.querySelector(".hint");
     if (h == '' || w == '') {
-        return alert('請輸入身高或體重');
+        hint.style.visibility = 'visible';
+        return;
     }
     let bmi = (w / ((h / 100) ** 2)).toFixed(2);
     
@@ -99,7 +100,8 @@ function computeBMI(e) {
         iconLoop.classList.add(`bg-${obj.color}`);
         iconLoop.classList.remove('d-none');
         bmiValue.innerHTML = `${obj.BMI}<br><small>BMI</small>`
-    }
+    };
+    hint.style.visibility = 'hidden';
 }
 
 
